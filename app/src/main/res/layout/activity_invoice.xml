@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvoiceActivity"
+    android:padding="@dimen/dp_10">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_invoiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_name"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvInvoiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/tv_invoiceName"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_invoiceDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_desc"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_invoiceName"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvInvoiceDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="desc"
+        style="@style/textviewTitle"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@id/tvInvoiceName"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/tv_invoiceDesc"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_discount"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toBottomOf="@id/tv_invoiceDesc"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_invoiceDesc"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/tv_discount"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_total"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_discount"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvDiscount"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/tv_total"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_received"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_received"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTotal"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/tv_received"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_returned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_return"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_received"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvReturned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textviewTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvReceived"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/tv_returned"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
